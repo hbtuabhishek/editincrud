@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="saveToLocalStorage(event)">
+        <label>Name</label>
+        <input type="text" name="username" id="username" required/>
+        <label>EmailId</label>
+        <input type="email" name="emailId" id="email" required/>
+        <label>Phone Number</label>
+        <input type="tel" name="phonenumber" id="phonenumber"/>
+
+        <button>Submit</button>
+    </form>
+
+    <ul id="listOfUsers" class="list-group" ></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
